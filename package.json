@@ -2,11 +2,12 @@
   "name": "restro_managerment_backend",
   "version": "1.0.0",
   "description": "backend for restro manangement",
-  "main": "dist/index.js",
+  "main": "dist/api/index.js",
   "scripts": {
     "dev": "nodemon --watch src --ext ts --exec ts-node src/api/index.ts",
     "build": "tsc",
     "start": "node dist/api/index.js",
+    "railway": "npm run build && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "shashank somwanshi",
